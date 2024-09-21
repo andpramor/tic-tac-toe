@@ -1,0 +1,35 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css'); /* Bootstrap icons CDN */
+
+.footer {
+  width: 100%;
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 1rem;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: #61dbfb;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
